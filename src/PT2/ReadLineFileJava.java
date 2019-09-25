@@ -3,7 +3,7 @@ package PT2;
 import java.io.File;
 import java.util.Scanner;
 
-public class ReadFileJava {
+public class ReadLineFileJava {
 	public static void main(String[] args) {
 		File fichero = new File("src\\PT2\\ReadLineFileJava.java");
 		Scanner s = null;
@@ -14,7 +14,7 @@ public class ReadFileJava {
 
 			// Leemos linea a linea el fichero
 			while (s.hasNextLine()) {
-				String linea = s.next(); // Guardamos la linea en un String
+				String linea = s.nextLine(); // Guardamos la linea en un String
 				System.out.println(linea); // Imprimimos la linea
 			}
 
